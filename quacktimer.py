@@ -124,8 +124,8 @@ class QuackTimer():
 
     def start(self):
         """
-        A funcao start eh responsavel pelo loop onde vai tocar o som, ela verifica
-        se a variavel is_running eh True, se for ela entra em loop.
+        A funcao start eh responsavel pelo loop onde vai tocar o som,  ela verifica
+        se a variavel is_running eh True, se for ela toca o som
         """
         if self.is_running == True:
             play(self.wav)
