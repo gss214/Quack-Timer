@@ -53,7 +53,7 @@ class QuackTimer():
         self.title.config(font=('helvetica', 14))
         self.title.pack(side='top')
 
-        #Texro de instruções
+        #Texto de instruções
         self.instruction_msg = tk.Label(
             self.root, text='Enter the time in seconds (greater than 0) to activate the QUACK')
         self.instruction_msg.config(font=('helvetica', 10))
