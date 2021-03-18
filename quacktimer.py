@@ -27,8 +27,7 @@ SOFTWARE.
 
 """
 
-from pydub import AudioSegment
-from pydub.playback import play
+from playsound import playsound
 import os
 import sys
 import tkinter as tk
@@ -40,10 +39,8 @@ class QuackTimer():
         self.root.geometry("650x250")
         self.root.winfo_toplevel().title("QuackTimer")
         self.package_dir = os.getcwd()
-        self.wav_path = self.find_data_file('quack_sound.wav')
-        self.wav = AudioSegment.from_file(self.wav_path, format='wav')
-        self.wav -= 10
-        play(self.wav)
+        self.wav = self.find_data_file('quack_sound.wav')
+        playsound(self.wav)
 
         self.seconds = 0
         self.is_running = False
@@ -128,7 +125,7 @@ class QuackTimer():
         se a variavel is_running eh True, se for ela toca o som
         """
         if self.is_running == True:
-            play(self.wav)
+            playsound(self.wav)
         self.root.after(self.seconds * 1000, self.start)    
     
     def stop(self):
