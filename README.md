@@ -5,5 +5,5 @@ Simple python program that plays QUACK every X seconds.
 
 To run: <br/>
 install python 3 <br/>
-intall playsound - pip install playsound <br/>
-py quacktimer.py 
+install playsound - `pip install playsound` <br/>
+`py quacktimer.py`
